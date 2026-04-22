@@ -38,7 +38,7 @@ df['30_day_avg'] = df.groupby(['city','fuel_type'])['price'].transform(lambda x:
 latest = df['date'].max()
 week = df[df['date'] >= latest - pd.Timedelta(days=7)]
 inc = week.groupby('city')['price'].apply(lambda x: x.max() - x.min())
-print("🔥 Highest Increase City:", inc.idxmax())
+print("Highest Increase City:", inc.idxmax())
 
 #STORE IN SQLITE
 conn = sqlite3.connect("fuel.db")

@@ -1,6 +1,4 @@
 # Fuel_Price_Watchdog_Pipeline
-# Fuel Price Watchdog Pipeline
-
 ## Overview
 This project tracks daily fuel prices, detects changes, and generates trend-based insights.
 
